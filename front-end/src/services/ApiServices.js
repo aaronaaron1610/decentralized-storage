@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = process.env.BACKEND_URL;
+const API_URL = "https://decentralized-storage.onrender.com/api";
 
 export const register = async (email, password) => {
     try {
