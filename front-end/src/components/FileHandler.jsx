@@ -116,7 +116,7 @@ function FileHandler({ walletAddress }) {
                     },
                 ],
             });
-            await tx.wait()
+            // await tx.wait()
             console.log("tx ", tx);
             alert(`File ${fileId} shared with ${shareAddress}`);
         } catch (error) {
@@ -186,7 +186,7 @@ function FileHandler({ walletAddress }) {
                     },
                 ],
             });
-            await tx.wait()
+            // await tx.wait()
             console.log("tx ", tx);
             alert(`Permission for ${address} removed from file ${fileId}`);
             await fetchPermittedUsers(fileId); 
